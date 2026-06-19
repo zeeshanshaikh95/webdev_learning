@@ -1,0 +1,772 @@
+1. Introduction to HTML
+What is HTML?
+
+HTML (HyperText Markup Language) is the standard markup language used to create and structure web pages.
+
+HTML defines the structure of web content.
+It tells browsers how content should be displayed.
+HTML is not a programming language.
+It is a markup language consisting of elements and tags.
+Full Form
+
+Hyper Text Markup Language
+
+Meaning of HyperText
+
+HyperText refers to text that contains links connecting one document to another.
+
+Example:
+
+<a href="https://google.com">Google</a>
+
+Clicking the text redirects users to another page.
+
+Meaning of Markup Language
+
+A markup language uses tags to define elements within a document.
+
+Example:
+
+<h1>Heading</h1>
+
+The tag tells the browser that the content is a heading.
+
+2. History of HTML
+Version	Year	Features
+HTML 1.0	1991	Basic structure
+HTML 2.0	1995	Standardized HTML
+HTML 3.2	1997	Tables, scripting
+HTML 4.01	1999	Improved forms
+XHTML	2000	XML-based HTML
+HTML5	2014	Multimedia, APIs
+Living Standard	Current	Continuous updates
+3. Features of HTML
+Easy to learn
+Platform independent
+Free and open standard
+Supports multimedia
+Supports hyperlinks
+Integrates with CSS and JavaScript
+SEO friendly
+Semantic structure support
+4. Structure of HTML Document
+
+Basic Structure:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+
+</body>
+</html>
+Components
+1. DOCTYPE Declaration
+<!DOCTYPE html>
+Declares document type.
+Tells browser to use HTML5 standards.
+2. html Tag
+<html>
+
+Root element containing entire webpage.
+
+3. head Tag
+
+Contains metadata:
+
+<head>
+</head>
+
+Not displayed on webpage.
+
+4. body Tag
+
+Contains visible content.
+
+<body>
+</body>
+5. HTML Elements
+
+An HTML element consists of:
+
+<tagname>Content</tagname>
+
+Example:
+
+<p>Hello</p>
+Empty Elements
+
+Elements with no closing tags.
+
+Examples:
+
+<br>
+<hr>
+<img>
+<input>
+<meta>
+<link>
+6. HTML Tags
+
+Tags are keywords enclosed in angle brackets.
+
+<h1>Heading</h1>
+Types of Tags
+Container Tags
+
+Require opening and closing tags.
+
+<p>Text</p>
+Empty Tags
+
+No closing tag.
+
+<br>
+7. HTML Attributes
+
+Provide additional information about elements.
+
+Syntax:
+
+<tag attribute="value">
+
+Example:
+
+<img src="image.jpg">
+Common Attributes
+Attribute	Purpose
+id	Unique identifier
+class	Group elements
+style	Inline CSS
+title	Tooltip
+href	Link URL
+src	Resource source
+alt	Alternative text
+target	Link behavior
+disabled	Disable element
+readonly	Read only
+required	Mandatory field
+8. HTML Head Section
+
+Contains metadata.
+
+Example:
+
+<head>
+<title>My Website</title>
+<meta charset="UTF-8">
+</head>
+Important Head Elements
+Title
+<title>Home</title>
+Meta
+<meta charset="UTF-8">
+
+Defines character encoding.
+
+Link
+<link rel="stylesheet" href="style.css">
+
+Connects external CSS.
+
+Script
+<script src="script.js"></script>
+
+Connects JavaScript.
+
+9. Headings
+
+HTML provides six heading levels.
+
+<h1>
+<h2>
+<h3>
+<h4>
+<h5>
+<h6>
+
+Importance:
+
+h1 → Most important
+h6 → Least important
+10. Paragraphs
+<p>This is paragraph.</p>
+11. Text Formatting Tags
+Bold
+<b>Text</b>
+Strong
+<strong>Text</strong>
+
+Semantic bold.
+
+Italic
+<i>Text</i>
+Emphasis
+<em>Text</em>
+
+Semantic italic.
+
+Underline
+<u>Text</u>
+Mark
+<mark>Highlighted</mark>
+Small
+<small>Small Text</small>
+Deleted
+<del>Deleted</del>
+Inserted
+<ins>Inserted</ins>
+Subscript
+H<sub>2</sub>O
+Superscript
+x<sup>2</sup>
+12. Line Break and Horizontal Rule
+Line Break
+<br>
+Horizontal Line
+<hr>
+13. Comments
+<!-- Comment -->
+
+Used for documentation.
+
+14. Hyperlinks
+Anchor Tag
+<a href="https://google.com">Google</a>
+Target Attribute
+<a href="page.html" target="_blank">
+
+Opens in new tab.
+
+15. Images
+<img src="image.jpg" alt="Description">
+Important Attributes
+src
+alt
+width
+height
+loading
+16. Lists
+Ordered List
+<ol>
+<li>Item</li>
+</ol>
+Unordered List
+<ul>
+<li>Item</li>
+</ul>
+Description List
+<dl>
+<dt>HTML</dt>
+<dd>Markup Language</dd>
+</dl>
+17. Tables
+
+Structure:
+
+<table>
+<tr>
+<th>Name</th>
+</tr>
+<tr>
+<td>John</td>
+</tr>
+</table>
+Table Tags
+Tag	Purpose
+table	Table
+tr	Row
+th	Heading
+td	Data
+thead	Header section
+tbody	Body section
+tfoot	Footer section
+caption	Table title
+18. Forms
+
+Used to collect user input.
+
+<form>
+</form>
+Form Attributes
+Attribute	Purpose
+action	Destination
+method	GET/POST
+enctype	Encoding
+autocomplete	Suggestions
+19. Form Elements
+Input
+<input type="text">
+Label
+<label>Name</label>
+Textarea
+<textarea></textarea>
+Select
+<select>
+<option>India</option>
+</select>
+Button
+<button>Submit</button>
+20. Input Types
+text
+password
+email
+number
+date
+time
+datetime-local
+month
+week
+color
+file
+checkbox
+radio
+range
+search
+url
+tel
+submit
+reset
+button
+hidden
+image
+21. HTML5 Semantic Elements
+
+Semantic tags provide meaning.
+
+<header>
+<nav>
+<main>
+<section>
+<article>
+<aside>
+<footer>
+
+Benefits:
+
+SEO
+Accessibility
+Better structure
+22. Multimedia
+Audio
+<audio controls>
+Video
+<video controls>
+Source
+<source>
+23. HTML5 Graphics
+Canvas
+<canvas>
+
+Used for drawing via JavaScript.
+
+SVG
+
+Scalable Vector Graphics.
+
+24. HTML Entities
+
+Special characters.
+
+Character	Entity
+<	&lt;
+>	&gt;
+&	&amp;
+"	&quot;
+©	&copy;
+₹	&#8377;
+25. Block vs Inline Elements
+Block Elements
+
+Take full width.
+
+Examples:
+
+div
+p
+h1
+section
+article
+table
+Inline Elements
+
+Take only needed width.
+
+Examples:
+
+span
+a
+img
+strong
+em
+26. Div and Span
+Div
+
+Block container.
+
+<div>
+Span
+
+Inline container.
+
+<span>
+27. HTML Metadata
+<meta>
+
+Examples:
+
+<meta charset="UTF-8">
+<meta name="description">
+<meta name="keywords">
+<meta name="author">
+<meta name="viewport">
+28. Responsive Design Meta Tag
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+29. HTML APIs
+
+HTML5 introduced APIs.
+
+Geolocation API
+
+Gets user location.
+
+Drag and Drop API
+
+Move elements.
+
+Web Storage API
+
+Stores data.
+
+Web Workers
+
+Background processing.
+
+History API
+
+Browser history manipulation.
+
+30. Local Storage vs Session Storage
+Feature	Local	Session
+Lifetime	Permanent	Until tab closes
+Size	~5MB	~5MB
+Access	Same origin	Same origin
+31. Accessibility (A11Y)
+
+Makes websites usable for everyone.
+
+Important:
+
+alt attributes
+labels
+semantic tags
+keyboard navigation
+ARIA attributes
+32. ARIA (Accessible Rich Internet Applications)
+
+Examples:
+
+aria-label
+aria-hidden
+aria-expanded
+aria-live
+role
+33. SEO in HTML
+
+Important factors:
+
+Proper headings
+Meta description
+Semantic HTML
+Alt text
+Title tag
+Structured content
+34. Global Attributes
+
+Available for almost all elements.
+
+id
+class
+style
+title
+hidden
+lang
+dir
+tabindex
+contenteditable
+draggable
+spellcheck
+35. HTML DOM
+
+DOM = Document Object Model
+
+Browser converts HTML into tree structure.
+
+Example:
+
+html
+ ├── head
+ └── body
+      ├── h1
+      └── p
+
+JavaScript interacts with DOM.
+
+36. HTML Validation
+
+Validation checks syntax correctness.
+
+Common errors:
+
+Missing closing tags
+Improper nesting
+Duplicate IDs
+Missing alt attributes
+37. HTML Best Practices
+Use semantic tags.
+Write clean indentation.
+Use lowercase tags.
+Add alt attributes.
+Avoid inline CSS.
+Use meaningful class names.
+Validate HTML.
+Keep structure organized.
+Ensure accessibility.
+Optimize SEO.
+38. Deprecated HTML Tags
+
+Avoid using:
+
+<font>
+<center>
+<big>
+<strike>
+<frameset>
+<frame>
+<acronym>
+<tt>
+<basefont>
+
+Use CSS instead.
+
+39. HTML Character Encodings
+
+Common:
+
+UTF-8
+UTF-16
+ASCII
+ISO-8859-1
+
+Recommended:
+
+UTF-8
+40. HTML File Structure in Real Projects
+project/
+│
+├── index.html
+├── about.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+└── images/
+41. Complete HTML5 Semantic Layout
+<body>
+
+<header>
+</header>
+
+<nav>
+</nav>
+
+<main>
+
+<section>
+
+<article>
+
+</article>
+
+</section>
+
+<aside>
+
+</aside>
+
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+42. HTML Interview Questions (Theory)
+What is HTML?
+
+A markup language used to structure web pages.
+
+Difference between HTML and HTML5?
+
+HTML5 introduced semantic tags, multimedia support, APIs, local storage, canvas, SVG, etc.
+
+Difference between div and span?
+div = block element
+span = inline element
+Difference between id and class?
+id = unique
+class = reusable
+Difference between GET and POST?
+GET sends data via URL.
+POST sends data in request body.
+What is Semantic HTML?
+
+HTML elements that describe their meaning.
+
+Example:
+
+<header>
+<footer>
+<article>
+<nav>
+43. HTML Tag Classification (Must Memorize)
+Structural Tags
+html
+head
+body
+title
+meta
+link
+Content Tags
+h1-h6
+p
+span
+div
+Formatting Tags
+b
+strong
+i
+em
+u
+mark
+small
+Media Tags
+img
+audio
+video
+source
+track
+Form Tags
+form
+input
+textarea
+button
+label
+select
+option
+fieldset
+legend
+datalist
+output
+Semantic Tags
+header
+nav
+main
+section
+article
+aside
+footer
+figure
+figcaption
+details
+summary
+time
+44. HTML5 New Features Summary
+Semantic elements
+Audio support
+Video support
+SVG
+Canvas
+Geolocation
+Local Storage
+Session Storage
+Drag & Drop
+Web Workers
+Offline Applications
+New Input Types
+New Form Controls
+Better Accessibility
+Final Revision Sheet (1-Page)
+
+HTML = Structure of Web Page
+
+Main Parts:
+
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+
+Core Topics:
+
+Elements
+Tags
+Attributes
+Headings
+Paragraphs
+Lists
+Tables
+Forms
+Images
+Links
+Semantic HTML
+Multimedia
+Canvas & SVG
+Accessibility
+SEO
+Metadata
+DOM
+APIs
+Storage
+Validation
+
+Most Important Tags:
+
+html
+head
+body
+title
+meta
+h1-h6
+p
+a
+img
+div
+span
+ul
+ol
+li
+table
+form
+input
+button
+header
+nav
+main
+section
+article
+aside
+footer
+audio
+video
+canvas
+svg
+
+These notes cover virtually every HTML theory topic from beginner to advanced level and are suitable for school, college, interviews, web development, and exam preparation.

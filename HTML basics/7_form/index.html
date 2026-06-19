@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+      <!-- action is used to direct he form data to submit.pho file, -->
+
+      <!-- method is used to specify the HTTP method to be used when submitting 
+                                                        the form data, in this case, it is set to "post" which means that the 
+                                                        form data will be sent in the body of the HTTP request. -->
+      <label for="name">Username:</label>
+      <!-- for is used to associate the label with the input field, in this case, it is associated with the input field with the id "name". -->
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your username"
+        minlength="3"
+        maxlength="20"
+        required
+      /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        required
+      /><br /><br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      /><br /><br />
+
+      <label for="phone">Phone Number:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="123-456-7891"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required
+      /><br /><br />
+      <input type="reset" />
+
+      <label for="date">Date of Birth:</label>
+      <input type="date" id="date" /><br /><br />
+      <label for="quantity">Quantity (between 1 and 5):</label>
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        max="5"
+      /><br /><br />
+
+      <!-- id="Mr" → label ko radio button se connect karta hai.
+        name="title" → same group ke radio buttons banata hai (sirf ek select hoga).
+        value="Mr." → form submit hone par jo value server ko bheji jayegi. -->
+      <label for="title">Title:</label>
+      <label for="Mr">Mr.</label>
+      <input type="radio" id="Mr" name="title" value="Mr." />
+      <label for="Mrs">Mrs.</label>
+      <input type="radio" id="Mrs" name="title" value="Mrs." />
+      <label for="Ms">Ms.</label>
+      <input type="radio" id="Ms" name="title" value="Ms." />
+
+
+
+      <!-- Dropdown -->
+      <label for="payment">Payment Method:</label>
+        <select id="payment" name="payment">
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="paypal">PayPal</option>
+        </select>
+
+        <label for="subscribe">subscribe</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+
+
+        <label for="comment">comment</label>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comment here..."></textarea><br /><br />
+     
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" accept="image/png, image/jpeg" /><br /><br />
+     
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+
+<!-- Semantic tags:
+<header>
+<nav>
+<main>
+<section>
+<article>
+<aside> -->
+<footer>
+    </form>
+  </body>
+</html>
+

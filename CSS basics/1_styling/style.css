@@ -1,0 +1,31 @@
+/* External CSS */
+body{
+    background-color: black;
+}
+
+#p1{
+    color: white;
+    font-size: 20px;
+}
+.class1{
+    color: red;
+    font-size: 30px;
+}
+
+
+/* colors can be specified by name, hex, rgb, hcl values */
+body{
+    background-color: black;
+}
+#p1{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.class1{
+    color: #ff0000;
+    font-size: 30px;
+}
+h1{
+    color: hsl(0, 100%, 50%);
+    font-size: 40px;
+}
