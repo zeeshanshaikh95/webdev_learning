@@ -1,0 +1,68 @@
+div{
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+   /* visibility: hidden;  Element is hidden */
+
+    display: inline; /* Behaves like an inline element */
+}
+span{
+    background-color: lightgreen;
+    height: 100px;
+    width: 100px;
+    display: block;  /* Behaves like a block element */
+}
+#div1{
+background-color: lightblue;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    /* displays content like an inline element but allows 
+    you to set width and height like a block element. It also respects vertical-align property. */
+}
+#span1{
+background-color: lightgreen;
+    height: 100px;
+    width: 100px;
+    display: none; 
+    /*Erase th element*/
+}
+/* .box{
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+Tum sochoge box ki width 200px hai.
+
+❌ Nahi.
+
+Actual width hogi:
+
+200px (content)
++ 20px left padding
++ 20px right padding
++ 5px left border
++ 5px right border
+------------------ */
+
+
+*{
+    box-sizing: border-box;  /*"200px ke andar hi content + padding + border sab fit karo."*/
+}
+
+.container{
+    background-color: rgb(166, 32, 32);
+    height:100%;
+}
+.box{
+    border: 2px solid;
+    padding: 25px;  /*Content aur border ke beech 25px space.*/
+    height: auto;
+    width: 50%;
+    float: left;
+min-height: 50%;
+    text-align: center;
+    background-color: lightblue;
+         /*Viewport height ka 50%*/
+}

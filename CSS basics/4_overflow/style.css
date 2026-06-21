@@ -1,0 +1,32 @@
+#box1{
+    border:1px solid black;
+    height:75px;
+    overflow: visible;
+    /* if any content exceeds the height of the box, it will be visible outside the box. */
+}   
+#box2{
+    border:1px solid black;
+    height:75px;
+    overflow: hidden;
+    /* if any content exceeds the height of the box, it will be hidden and not visible outside the box. */
+}
+#box3{
+    border:1px solid black;
+    height:75px;
+    overflow: clip;
+    overflow-clip-margin: 10px;
+    /* if any content exceeds the height of the box, it will be clipped and not visible outside the box. The difference between hidden and clip is that hidden will hide the content but still take up space, while clip will completely remove the content from the layout. */ 
+}
+#box4{
+    border:1px solid black;
+    height:75px;
+    overflow: scroll;
+    /* if any content exceeds the height of the box, it will be hidden and a scrollbar will appear to allow the user to scroll through the content. */
+}
+
+#box5{
+    border:1px solid black;
+    height:75px;
+    overflow: auto;
+    /* if any content exceeds the height of the box, it will be hidden and a scrollbar will appear only if necessary. If the content fits within the box, no scrollbar will be shown. */
+}

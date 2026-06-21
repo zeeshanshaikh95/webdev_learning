@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+}
+h1{
+    color:aliceblue
+}
+p{
+    color:aliceblue;
+}
+#container1 p{ /*descendants*/
+background-color: aqua;
+ 
+}
+#container2 > p{
+    background-color: brown;
+     
+}
+#container3 ~ p{
+    background-color: purple;
+}
+#container4 + p{
+    background-color:chartreuse;
+}

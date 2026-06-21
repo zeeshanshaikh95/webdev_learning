@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("2_fonts/roboto.ttf");
+    
+}
+/* for installed fonts */
+
+
+h1{
+    font-family: verdana, arial;
+}
+h2{
+    font-family: "roboto";
+}
+
+p{
+    font-family: "Roboto", "courier new";
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Bordering */
+
+h1{
+    border: 3px solid red;
+    border-radius: 10px;
+}
+/* h1{
+    border-style:solid;
+    border: width 3px;
+    border-radius: 10px;
+    border-color: red;
+} */
+
+p{
+    border-bottom: 2px dashed blue;
+    border-right: 2px dashed blue;  
+}
+
+
+
+/* shadowing */
+
+#box1{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    /* horizontal vertical blur color */
+    box-shadow: 10px 10px 5px grey;
+}
+#p1{
+    font-size: 40px;
+    text-shadow: 10px 10px 10px red,
+                 10px 10px 2px blue;
+}
+

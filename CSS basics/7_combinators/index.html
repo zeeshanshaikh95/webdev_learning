@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--combinators = explains the relationship
+              between listed selectors
+
+    (space) = descendant
+
+    > = child
+
+    ~ = general sibling
+
+    + = adjacent sibling-->
+    <div id="container1">
+        <h1>These are the descendants (p) of the container1</h1>
+        <p>This is #1</p>
+        <p>This is #2</p>
+        <div>
+            <p>This is #3</p>
+        </div>
+    </div>
+    <div id="container2">
+        <h1>These are the children (p) of the container2</h1>
+        <p>This is #4</p>
+        <p>This is #5</p>
+        <div>
+            <p>This is #6</p>
+        </div>
+    </div>
+       <div id="container3">
+        <h1>These are the general siblings (p) of the container3</h1>
+        <p>This is #7</p>
+        <p>This is #8</p>
+        <div>
+            <p>This is #9</p>
+        </div>
+    </div>
+        <p>This is #10</p>
+        <p>This is #11</p>
+    
+         <div id="container4">
+        <h1>These are the adjacent siblings (p) of the container4</h1>
+        <p>This is #12</p>
+        <p>This is #13</p>
+        <div>
+            <p>This is #14</p>
+        </div>
+    </div>
+        <p>This is #15</p>
+        <p>This is #16</p>
+</body>
+</html>

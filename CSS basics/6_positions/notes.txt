@@ -1,0 +1,34 @@
+1. position: fixed
+
+Element hamesha viewport (screen) ke relative hota hai.
+
+.navbar{
+    position: fixed;
+    top: 0;
+}
+Result:
+Page scroll karo ✔️
+Navbar wahi rahega ✔️
+Apni original jagah chhod deta hai ✔️
+Screen
++------------------+
+| Navbar           | ← Always here
++------------------+
+| Content          |
+| Content          |
+| Content          |
++------------------+
+2. position: sticky
+
+Element pehle normal flow me rehta hai.
+
+Jab scroll karte karte specified position (top: 0) tak pahunchta hai, tab chipak jata hai.
+
+.navbar{
+    position: sticky;
+    top: 0;
+}
+Result:
+Start me normal position ✔️
+Scroll karte karte top pe aayega ✔️
+Fir top pe stick ho jayega ✔️

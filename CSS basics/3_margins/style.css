@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+}
+.box{
+    border:1px solid black;
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+#box1{
+    margin-left:auto;
+     background-color: red;
+}
+#box2{
+    margin-right:auto;
+    background-color: blue;
+}
+#box3{
+    margin: auto;
+    background-color: green;
+}
+/* 2. margin: auto;
+
+Browser automatically margins calculate karega.
+
+Agar #box3 ki width set hai:
+
+#box3{
+    width: 200px;
+    margin: auto;
+    background-color: green;
+}
+
+toh box horizontally center ho jayega. */
+
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+#img2{
+    float: right;
+    margin-left: 10px;
+}
+
+#display{
+    border: 1px solid black;
+    display:flow-root; 
+    /* covers the entire width of the parent element and clears any floated elements within it. This means that the parent element will expand to contain its floated children, preventing any overlap or layout issues. */
+}
