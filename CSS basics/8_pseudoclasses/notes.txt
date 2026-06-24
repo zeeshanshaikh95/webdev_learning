@@ -1,0 +1,112 @@
+Pseudo-classes CSS me special keywords hote hain jo kisi element ki specific state ya condition ko target karte hain.
+
+Syntax:
+
+selector:pseudo-class {
+    property: value;
+}
+Common Pseudo-Classes
+1. Link States
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+:link → Unvisited link
+:visited → Visited link
+:hover → Mouse element ke upar ho
+:active → Click karte waqt
+2. Form States
+input:focus {
+    border: 2px solid blue;
+}
+:focus → Input selected/clicked ho
+input:disabled {
+    background: lightgray;
+}
+:disabled → Disabled input
+input:checked {
+    accent-color: green;
+}
+:checked → Checked checkbox/radio button
+3. Child Selection
+li:first-child {
+    color: red;
+}
+First child
+li:last-child {
+    color: blue;
+}
+Last child
+li:nth-child(3) {
+    color: green;
+}
+3rd child
+li:nth-child(even) {
+    background: lightgray;
+}
+Even numbered children
+4. Negation
+p:not(.special) {
+    color: gray;
+}
+.special class wale paragraphs ko chhodkar sab select karega.
+Example
+<ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+</ul>
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: blue;
+}
+
+li:hover {
+    background: yellow;
+}
+
+Result:
+
+Apple → Red
+Mango → Blue
+Kisi bhi item par mouse le jao → Yellow background
+Pseudo-Class vs Pseudo-Element
+
+Pseudo-Class (:) → Element ki state select karta hai
+
+button:hover
+input:focus
+li:first-child
+
+Pseudo-Element (::) → Element ke specific part ko select karta hai
+
+p::first-letter
+p::first-line
+::selection
+
+Example:
+
+p::first-letter {
+    font-size: 40px;
+}
+
+Paragraph ka pehla letter bada ho jayega.
+
+Yaad rakho:
+
+: = Pseudo Class (state/condition)
+:: = Pseudo Element (part of an element)

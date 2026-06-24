@@ -1,0 +1,28 @@
+.dropdown button{
+    background-color: grey;
+    border:none;
+    cursor:pointer;
+}
+.dropdown a{
+    display:block;
+    color:black;
+    padding: 10px 15px;
+    text-decoration: none; /*to remove underline from link*/
+
+}
+.dropdown .content{
+    display:none;
+    position:absolute;
+    background-color: grey;
+    box-shadow: 2px 2px 5px black;
+}
+.dropdown:hover .content{
+    display:block;
+    background-color: aliceblue;
+}
+.dropdown:hover button{
+    background-color: aliceblue;
+}
+.dropdown{
+     display: inline-block;
+}

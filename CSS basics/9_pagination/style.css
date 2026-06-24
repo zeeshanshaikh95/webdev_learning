@@ -1,0 +1,21 @@
+.pagination{
+    text-align: center;
+    
+}
+.pagination a{
+    color:black;
+    padding: 10px 20px;
+    display:inline-block;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.pagination a.active{
+    background-color: aqua;
+   
+}
+.pagination a:hover:not(.active){
+    background-color: grey;
+}

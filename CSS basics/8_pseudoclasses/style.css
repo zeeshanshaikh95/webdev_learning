@@ -1,0 +1,64 @@
+a:link{
+    color:rgb(99, 208, 255)
+}
+a:hover{
+    color: aquamarine;
+}
+a:active{
+    color:blue;
+    font-size: 1px;
+}
+a:visited{
+    color:black;
+}
+li:hover{
+    background-color: yellow;
+}
+li:not(:hover){
+    background-color: blue;
+}
+
+li:nth-child(odd){
+    background-color: aliceblue;
+}
+
+
+#greeting p{
+    background-color: aqua;
+    display: none;
+}
+#greeting:hover p{
+    display:block;
+}
+
+/* pseudoelements */
+#heading::first-letter{
+    font-size:2em; 
+    /* 200% */
+    font-style: italic;
+}
+p::first-line{
+    background-color: aqua;
+}
+p::selection{
+    background-color: black;
+    color:green;
+}
+#fruits li::before{
+    content:"✅";    
+    /* windows+; */
+}
+#apple::after{
+    content:"🍎";
+}
+#orange::after{
+    content:"🍊";
+}
+#banana:after{
+    content:"🍌";
+}
+
+#fruits li::marker{
+    color:blue;
+    content:"✅";
+}
