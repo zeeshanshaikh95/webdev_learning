@@ -1,0 +1,16 @@
+.gallery{
+    display:inline-block;
+    border:5px black solid;
+    margin:5px;
+    width:250px
+}
+.gallery .description{
+    padding:5px;
+    text-align: center;
+}
+.gallery img{
+    width:100%; /*This 100% width is from gallery class 200px*/
+}
+/* ✅ Same line me bhi rahega.
+
+✅ Width aur Height bhi le sakta hai. */

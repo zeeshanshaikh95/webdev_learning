@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+
+.navbar li{
+   float:left; 
+}
+
+
+
+/* for the webpage layout */
+
+aside{
+    float:left;
+    width:30%;
+}
+main{
+    float: left;
+    width:40%;
+}
+article{
+    float:left;
+    width:30%;
+}
+footer{
+        clear:both;
+        text-align:center;
+}
+
+
+/* for mobile view */
+@media screen and (max-width:600px){ /*Screen Width ≤ 600px*/
+    aside,section,article{
+        width:100%;
+    }
+}
