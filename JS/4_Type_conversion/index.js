@@ -41,3 +41,18 @@ console.log(x3,typeof x3);   //if we empty the input the compiler puts the value
 console.log(y3,typeof y3);
 console.log(z3,typeof z3);
 
+
+
+//const variable
+// const = a variable that can't be changed
+
+const PI = 3.14159;    //capital PI is not used in strings considered as a bad practice
+let radius;
+let circumference;
+
+document.getElementById("mySubmit").onclick = function(){
+    radius = document.getElementById("myText").value;
+    radius = Number(radius);
+    circumference = 2 * PI * radius;
+    document.getElementById("myH3").textContent = circumference + "cm";
+}
