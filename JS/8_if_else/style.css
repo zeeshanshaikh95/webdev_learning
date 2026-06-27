@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color:green;
+}
+#mySubmit{
+    background-color: black;;
+    color:green;
+    border:2px solid green;
+}
+#mySubmit:hover{
+    color:black;
+    background-color: green;
+}
+#myText{
+    background-color: green;
+    color:black;
+}
+#myText:hover{
+    background-color: black;
+    color:green;
+}
