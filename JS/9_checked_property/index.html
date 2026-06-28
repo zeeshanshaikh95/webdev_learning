@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="index.js"></script>
+    <input type="checkbox" id="myCheckBox">
+<label for="myCheckBox">subscribe</label><br>    
+<!-- For is used to link the subscribe text to checkbox -->
+
+<input type="radio" id="visaBtn" name="card">        
+<!-- name is used to group the radio buttons -->
+<label for="visaBtn">Visa</label><br>
+<input type="radio" id="masterCardBtn" name="card">
+<label for="masterCardBtn">MasterCard</label><br>
+<input type="radio" id="paypalBtn" name="card">
+<label for="paypalBtn">PayPal</label><br>
+
+<button type="submit" id="mySubmit">submit</button>
+
+<p id="subResult"></p>
+<p id="paymentResult"></p>
+
+<script src="index.js"></script>
+
 </body>
 </html>
