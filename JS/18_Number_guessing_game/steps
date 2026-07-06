@@ -1,0 +1,133 @@
+JavaScript Random Number Formula
+Math.floor(Math.random() * (max - min + 1)) + min;
+Purpose
+
+Generates a random integer between min and max (both inclusive).
+
+Step 1: Math.random()
+Math.random()
+Generates a random decimal number.
+Range:
+0 (inclusive)
+1 (exclusive)
+
+Examples:
+
+0.1234
+0.9876
+0.4567
+0.0001
+
+It never returns 1.
+
+Step 2: Multiply by the Range
+Math.random() * (max - min + 1)
+
+Range Formula:
+
+max - min + 1
+
+Example:
+
+min = 1
+max = 100
+
+100 - 1 + 1 = 100
+
+So,
+
+Math.random() * 100
+
+Possible output:
+
+23.4
+91.2
+65.78
+0.52
+
+Range becomes:
+
+0 to 99.999999...
+Step 3: Math.floor()
+Math.floor(number)
+
+Removes the decimal by rounding down.
+
+Examples:
+
+23.7 → 23
+91.9 → 91
+0.5  → 0
+99.99 → 99
+
+Now the numbers become:
+
+0, 1, 2, 3, ..., 99
+Step 4: Add the Minimum Value
++ min
+
+Example:
+
+min = 1
+
+Before:
+
+0 → 99
+
+After adding 1:
+
+1 → 100
+
+Now the range is:
+
+1 to 100
+Example
+Math.random() = 0.6578
+
+Calculation:
+
+0.6578 × 100 = 65.78
+Math.floor(65.78) = 65
+65 + 1 = 66
+
+Final Answer:
+
+answer = 66;
+Why +1 in (max - min + 1)?
+
+Without +1:
+
+100 - 1 = 99
+
+Range becomes:
+
+1 to 99
+
+100 will never be generated.
+
+Adding +1 includes the maximum value.
+
+General Formula
+Math.floor(Math.random() * (max - min + 1)) + min;
+Examples
+
+Random number from 1 to 10
+
+Math.floor(Math.random() * 10) + 1;
+
+Random number from 50 to 100
+
+Math.floor(Math.random() * (100 - 50 + 1)) + 50;
+
+Random number from 200 to 500
+
+Math.floor(Math.random() * (500 - 200 + 1)) + 200;
+
+Quick Memory Trick ⭐
+Math.random()        → Generate a random decimal (0 ≤ x < 1)
+
+× (max - min + 1)   → Stretch it to the required range
+
+Math.floor()         → Remove the decimal
+
++ min                → Shift the range to start from the minimum value
